@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HowToConnectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:padding="11dp"
+            android:src="@drawable/back_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/medium_monstrent"
+            android:text="How To Connect ?"
+            android:textColor="#263238"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/main_ly_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="My Phone Gets Stuck At Connecting When Pairing Up With TV."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_one"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Restart The Smartphone Wi-Fi And See If The Connection Is Successful."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="2."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Turn Off The TV And Remove Its Power Cord From The Socket As Well. Wait 1 Minute And Restart The TV."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="3."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Horten The Distance Between Your Phone And The TV. Take It Up Close."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="It Worked For Me Before, But It Does Not Work Now."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_two"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="If It Worked Before, Then It Definitely Can Be Used Again."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="2."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Most Connection Problems Can Be Solved By Restarting Devices. Just Restart Both Your Phone And TV, Follow The Regular Connection Process To Retry."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="It Shows That My Device Is Not Supported."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_three"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="This Means That Your Phone Itself Does Not Support The Screen Mirroring Function."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="2."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="You Can Use XCast To Cast Video, Audio And Photo To TV. With XCast, You Can Do Other Things With Your Phone While Casting To TV."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="My TV Is An Old TV And Does Not Support Wi-Fi."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_four"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="If Your TV Supports HDMI Interface, We Recommend That You Buy An External Receiver For Screen Mirroring. Such As Chromecast, Anycast Etc."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="The Image On TV Is Black, But The Sound Can Be Heard."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_five"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Some Content Involves Copyright Protection And Cannot Be Displayed On Third-Party Devices, Such As Netflix, Disney Plus etc. You Can Download The Video Or Look For The Same Resource On Other Apps To Have A Try."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="Connection Will Be Interrupted After A While."
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_six"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="You May Turn On The Smart Connect In Your Wi-Fi Settings. It Will Search For Better Wi-Fi Connections Constantly, And Always Connect Back And Forth."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="2."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="Please Make Sure That The Wi-Fi Of The Mobile Phone And TV Is The Same And The Best Signal."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ly_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium_monstrent"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="Is My Personal Information Or Mobile Data Absolutely Safe ?"
+                    android:textColor="#263238"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/arrow_img_seven"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/faq_down" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_txt_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="1."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="We Will Not Monitor Or Collect Any Information On You And Your Mobile Phone. You Can Cast Your Screen Without Any Worry."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="2."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium_monstrent"
+                        android:text="The system May Warn You That There Is A Safety Hazard Before Screen Mirroring. This Is Just A Regular Reminder, It Will Be Prompted When You Use The Screen Projection Or Screen Recording Function."
+                        android:textColor="#7392A0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

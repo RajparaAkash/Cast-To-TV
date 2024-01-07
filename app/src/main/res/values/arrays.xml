@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="array_dot_active">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>#C8C8C8</item>
+        <item>#C8C8C8</item>
+        <item>#C8C8C8</item>
+        <item>#C8C8C8</item>
+        <item>#C8C8C8</item>
+        <item>#C8C8C8</item>
+    </array>
+
+    <array name="play_back_speed">
+        <item>0.25</item>
+        <item>0.50</item>
+        <item>0.75</item>
+        <item>1</item>
+        <item>1.25</item>
+        <item>1.50</item>
+        <item>1.75</item>
+        <item>2</item>
+    </array>
+
+</resources>

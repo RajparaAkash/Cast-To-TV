@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Cast to TV - Chrome Casting</string>
+
+
+    <string name="cast_device_chooser_searching_for_devices">Finding devices</string>
+    <string name="cast_device_chooser_title">Cast to</string>
+    <string name="cast_disconnect">Disconnect</string>
+    <string name="cast_zero_devices_found">No devices found.\n</string>
+    <string name="cast_zero_devices_learn_more_description">Learn more about how you can cast your content to other devices.</string>
+
+    <string name="image_generator_on_device">ON DEVICE</string>
+    <string name="image_generator_press">PRESS</string>
+    <string name="media_route_menu_title">Connect</string>
+    <string name="pref_key_client_con_timeout">PREF_KEY_CLIENT_CON_TIMEOUT</string>
+    <string name="pref_key_jpeg_quality">PREF_KEY_JPEG_QUALITY</string>
+    <string name="pref_key_server_port">PREF_KEY_SERVER_PORT</string>
+    <string name="text_already_last_video">Already last video play.</string>
+    <string name="text_choose_tools">Send email via...</string>
+    <string name="text_choose_tools_ip">Send Ip Address via...</string>
+    <string name="text_connect_successfully">Device connected successfully</string>
+    <string name="text_connecting">Connection starting....</string>
+    <string name="text_content_stream">Press start to begin stream</string>
+    <string name="text_copy_successful">Copy successful</string>
+    <string name="text_disconnect_message">Device disconnected successfully</string>
+    <string name="text_guide_1_1">1. Connect to the same Wifi and turn off VPN</string>
+    <string name="text_guide_2_2">2. Open this website on the other device and type the IP Address:</string>
+    <string name="text_guide_3_3">3. Click on \"START MIRRORING\"</string>
+    <string name="text_mode">Mode</string>
+    <string name="text_ready_to_stream">Ready to stream</string>
+    <string name="text_recommend">Enter the following address in your browser: \n\n</string>
+    <string name="text_screen_transmisstion">Screen sharing</string>
+    <string name="text_seek_to">Seek to</string>
+    <string name="text_start_mirroring">Start Mirroring</string>
+
+</resources>

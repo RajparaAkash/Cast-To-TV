@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE " />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+
+    <application
+        android:name="com.example.chromecastone.Utils.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_squre"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HowToConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ScreenCastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityFourth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityThird"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivitySecond"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityFirst"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CastForWebBrowserActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MusicPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.VideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListAudiosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CastFolderAudiosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CastFolderVideosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CastDeviceListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FullImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListPhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListVideosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CastFolderPhotosActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.example.chromecastone.CastServer.CastServerService" />
+
+        <service
+            android:name="com.example.chromecastone.Dlna.model.UpnpService"
+            android:exported="true" />
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
+
+        <service
+            android:name="com.example.chromecastone.Service.BackgroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="mediaProjection"
+            android:stopWithTask="true" />
+
+        <receiver android:name="com.example.chromecastone.Receiver.MyReceiver" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.example.chromecastone.CastOptionsProvider" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>
